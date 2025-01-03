@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="40dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:id="@+id/llrow"
+    android:layout_gravity="center"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:textAllCaps="true"
+            android:background="#72E41B1B"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:id="@+id/text"
+            android:layout_gravity="center_horizontal"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:id="@+id/name"
+                android:hint="Name - "
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Mobile No. - "
+                android:id="@+id/mobile"
+                android:inputType="number"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="150dp"
+            android:background="#0F40F0"
+            android:layout_height="60dp"
+            android:id="@+id/add"
+            android:text="add"
+            android:layout_marginBottom="15dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
